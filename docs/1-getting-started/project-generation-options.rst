@@ -142,6 +142,13 @@ keep_local_envs_in_vcs:
     is strongly encouraged).
     Note: .env(s) are only utilized when Docker Compose and/or Heroku support is enabled.
 
+keep_prod_envs_in_vcs:
+    Indicates whether the project's ``.envs/.production/`` should be kept in VCS
+    (comes in handy when working in teams where local environment reproducibility
+    is strongly encouraged).
+    Note: .env(s) are only utilized when Docker Compose and/or Heroku support is enabled.
+
+
 debug:
     Indicates whether the project should be configured for debugging.
     This option is relevant for Cookiecutter Django developers only.

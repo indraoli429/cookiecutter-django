@@ -126,10 +126,12 @@ RUN mkdir -p ${APP_HOME}/{{ cookiecutter.project_slug }}/media
 
 # make django owner of the WORKDIR directory as well.
 RUN chown -R django:django ${APP_HOME}
+RUN chmod -R 755 ${APP_HOME}
 
 USER django
 
 RUN DATABASE_URL="" \
+  CELERY_BROKER_URL="" \
   DJANGO_SETTINGS_MODULE="config.settings.test" \
   python manage.py compilemessages
 
