@@ -409,3 +409,5 @@ WEBPACK_LOADER = {
 {%- endif %}
 # Your stuff...
 # ------------------------------------------------------------------------------
+CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=["http://localhost:8000"])

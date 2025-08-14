@@ -47,6 +47,7 @@
   "ci_tool": ["Gitlab", "Travis", "Github", "Drone", "None"],
   "reverse_proxy": ["nginx", "traefik"],
   "open_port": "8080",
+  "server_address": "192.168.1.253",
   "superuser": "indra",
-  "superpassword": "N@tional17"
+  "superpassword": "Cookie@123"
 }
